@@ -1,0 +1,245 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+\usepackage{palatino}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Somtochukwu Nwagbata} \\ \vspace{1pt}
+    \small (478) 321-0841 $|$ \href{mailto:somto@gatech.edu}{\underline{somto@gatech.edu}} $|$ 
+    \href{https://linkedin.com/in/snwagbata}{\underline{linkedin.com/in/snwagbata}} $|$
+    \href{https://github.com/snwagbata}{\underline{github.com/snwagbata}} $|$
+    \small U.S Citizen
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {Bachelor of Science in Computer Science}{Aug. 2021 -- May 2025}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    % \resumeSubheading
+    %   {Georgia Institute of Technology}{Atlanta, GA}
+    %   {Undergraduate Teaching Assistant}{August 2022 -- Present}
+    %   \resumeItemListStart
+    %     \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
+    %     \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
+    %     \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+    %   \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+    {Amazon}{May 2022 -- August 2022}
+      {Incoming SDE Intern}{Seattle, WA}
+      \resumeItemListStart
+        % \resumeItem{Communicate with managers to set up campus computers used on campus}
+        % \resumeItem{Assess and troubleshoot computer problems brought by students, faculty and staff}
+        % \resumeItem{Maintain upkeep of computers, classroom equipment, and 200 printers across campus}
+    \resumeItemListEnd
+\vspace{10pt}
+    \resumeSubheading
+      {Rigby's Water World}{June 2021 -- August 2021}
+      {Guest Services Representative}{Warner Robins, GA}
+      \resumeItemListStart
+        \resumeItem{Helped over 500 guests each day to access the various services the park offered while working at different stations of the water park.}
+        \resumeItem{Assisted guests with their reservations and with purchasing tickets through the POS system.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{MyKdramaList} $|$ \emph{Python, Firebase}}{November 2021 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed a web scrapper that scrapes data from an online database of Korean television series and uploads the data to a Firestore database.}
+            \resumeItem{Implemented a GitHub action that updates and adds new scrapped data in the database.}
+            \resumeItem{Currently working on a mobile app that allows users to add T.V shows to their watchlist, and then create recommendations based on the user’s watchlist.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{HCBE Alerts} $|$ \emph{Flutter, Dart, Java, Firebase}}{September 2020 -- May 2021}
+          \resumeItemListStart
+            \resumeItem{Led a team of three to develop a mobile app designed to alert all school staff and School Resource Officers of any emergency going on campus.}
+            \resumeItem{Implemented Google OAuth to only accept email addresses associated with the school district.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%----------Volunteer Experience----------
+\section{Volunteer Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading{Hold a Hand Project}{January 2018 -- Present}
+    {Technical Manager}{Austin, TX}
+    \resumeItemListStart
+        \resumeItem{Developed the organization’s website and handled its search engine optimization (SEO).}
+        \resumeItem{Upgraded the organization’s donor management system to better track donations.}
+        \resumeItem{Utilized HTML, CSS, JavaScript, SQL, and PHP in building several aspects of the website.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+%----------Open-Source Contribution------
+\section{Open-Source Contribution}
+\resumeSubHeadingListStart
+    \resumeProjectHeading{\textbf{Parabeac} $|$ {\emph{Dart}}}{}
+    \resumeItemListStart
+    \resumeItem{Refactored the software’s argument parser to improve efficiency and reduce errors.}
+    \resumeItem{Expanded efforts to bring native Windows support for the software to access more users.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%---------------AWARDS-------------------
+\section{Awards}
+\begin{itemize}
+    \small{\item {
+    \textbf{2019 \& 2020 Congressional App Challenge District Winner --} United States House of Representatives.
+    }}
+    
+    \small{\item{
+    \textbf{2021 Golden Eagle Award in Computer Science --} United Way of Central Georgia
+    }}
+\end{itemize}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Dart, Python, PHP, JavaScript, HTML/CSS.} \\
+     \textbf{Frameworks}{: Flutter, Bootstrap, JUnit.} \\
+     \textbf{Developer Tools}{: Git, GitHub, Google Firebase, VS Code, IntelliJ} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
